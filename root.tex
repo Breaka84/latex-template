@@ -1,0 +1,128 @@
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.4 for LaTeX2e as of 16. April 2010
+%
+\documentclass[12pt]{llncs} %%%%%%%%%%%%%%%%%%%%% Used for drafting %%%%%%%%%%%%%%%%%%%%%
+%\documentclass{llncs}
+%
+
+\usepackage[colorlinks, linkcolor = black, citecolor = black, filecolor = black, urlcolor = blue]{hyperref} 
+
+% APA Cite Package and initialization
+%\RequirePackage{apacite}
+\usepackage[apaciteclassic]{apacite}
+\bibliographystyle{apacite}
+
+%
+\usepackage{makeidx}  % allows for indexgeneration
+%
+\usepackage{color}
+% 
+\setcounter{tocdepth}{2}
+% 
+% make a proper TOC despite llncs
+\makeatletter
+\renewcommand*\l@author[2]{}
+\renewcommand*\l@title[2]{}
+\makeatletter
+
+\usepackage[UTF8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage[ngerman]{babel}
+
+\usepackage{comment}
+
+\usepackage{tabularx}
+
+
+
+\linespread{1.6} %%%%%%%%%%%%%%%%%%%%% Used for drafting %%%%%%%%%%%%%%%%%%%%%
+\usepackage[margin=2.5cm]{geometry} %%%%%%%%%%%%%%%%%%%%% Used for drafting %%%%%%%%%%%%%%%%%%%%%
+
+%=====================================================================================
+
+\begin{document} 
+%
+\frontmatter          % for the preliminaries 
+%
+\pagestyle{headings}  % switches on printing of running heads
+% \addtocmark{Hamiltonian Mechanics} % additional mark in the TOC
+%
+
+\author{David Eigenstuhler BA}
+\title{Augmented Reality Support for Business Process Modeling}
+\titlerunning{Augmented Reality in BPM}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%\subtitle{Proposal}
+\institute{Communications Engineering\\
+Department of Business Information Systems\\
+Johannes Kepler University of Linz}
+\maketitle
+
+%\vspace{5cm} 
+\begin{flushright}\noindent
+April 2014 
+\end{flushright}
+\vspace{1cm}
+
+%\begin{tabular}{p{8cm}p{8cm}}
+%\begin{tabular}{>{\centering\arraybackslash}p{4cm}p{4cm}p{4cm}}
+\begin{tabular}{p{4cm}p{4cm}p{4cm}}
+Course Supervisor & & Course Supervisor \tabularnewline 
+Udo Kannengiesser & & Eric Brewster \tabularnewline 
+\end{tabular} 
+
+%=====================================================================================
+
+%\newpage
+
+\vspace{1cm}
+\begin{abstract}
+Using virtual worlds or Augmented Reality for Business Process Modeling (BPM) is a fairly new approach 
+in the process modeling field. Having domain experts with little modeling skills and process modeling
+experts with no knowledge of the process to be modeled requires new solutions. This paper examines three
+different methods to give an overview of current approaches, which try to overcome this problem by
+tangible physical objects, virtual reality, and Augmented Reality respectively. The analysis is done
+on the basis of secondary research only. Physical and tactile modeling makes it easy for domain experts 
+to interact with the model. The major drawback of the necessary manual transcription of the results is 
+being avoided by the idea to include the modeler into virtual worlds. Using the Second Life engine provides
+easier immersion into the model than general BPM methods. This solution lacks the natural communication
+component such as nonverbal signals, which is overcome by combining the two aforementioned solutions. 
+An augmented tabletop featuring physical objects and direct software integration requires in turn special
+hardware. There is no perfect method at this time but current methods already provide significant advantages
+over traditional BPM procedures.\\
+\vspace{1cm}
+ 
+\textbf{Keywords: }
+\textit{Business Process Modeling, Augmented Reality, Virtual Reality,
+Tangible-BPM, Subject-oriented BPM}
+\end{abstract}
+
+%=====================================================================================
+%
+%\tableofcontents
+%
+\mainmatter              % start of the contributions
+%
+\title{Augmented Reality Support for Business Process Modeling}
+%
+%=====================================================================================
+
+\include{body}
+
+\clearpage
+
+
+
+
+\printindex
+
+\bibliography{refs}
+
+\clearpage
+
+\include{biodata}
+
+\end{document}
